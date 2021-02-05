@@ -1,0 +1,83 @@
+{
+    "bg": "https://sm.ign.com/ign_pt/screenshot/default/last-of-us-desktop-wallpaper001_3x3v.jpg",
+    "title": "Quiz sobre o jogo The last of us",
+    "description": "Teste os seus conhecimentos sobre o jogo The last of us",
+    "questions": [
+      {
+        "image": "https://rollingstone.uol.com.br/media/uploads/sarah-e-joel-the-last-of-us-reproducao.jpg",
+        "title": "Qual é o nome da filha de Joel?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          "Ellie",
+          "Marlene",
+          "Sarah",
+          "Maria"
+        ]
+      },
+      {
+        "image": "https://atorredecontrole.com.br/wp-content/uploads/2020/06/The-last-1.jpg",
+        "title": "Qual animal Ellie e Joel encontram no primeiro jogo?",
+        "description": "Ixi qual será?",
+        "answer": 3,
+        "alternatives": [
+          "Elefante",
+          "Leão",
+          "Baleia",
+          "Girafa"
+        ]
+      },
+      {
+        "image": "https://miro.medium.com/max/2304/1*BaF4VCOROv6HnJ-nokeyjg.jpeg",
+        "title": "Como são conhecidos os inimigos que são cegos e se orientam pelo som?",
+        "description": "Essa é fácil hein",
+        "answer": 0,
+        "alternatives": [
+          "Estaladores",
+          "Tropegos",
+          "Corredores",
+          "Vagalumes"
+        ]
+      },
+      {
+        "image": "https://s2.glbimg.com/wxU5IRov7dhLv1lgEz7jlgtdzzg=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/t/n/3BORX0SAy9q3KBK5dwHw/the-last-of-us-part-2-abby.jpeg",
+        "title": "A qual organização Abby pertence?",
+        "description": "Qual era mesmo?",
+        "answer": 0,
+        "alternatives": [
+          "Lobos",
+          "Vagalumes",
+          "Caçadores",
+          "Fedra"
+        ]
+      },
+      {
+        "image": "https://static.wikia.nocookie.net/thelastofus/images/e/e4/Young_Ellie_shoulder_infobox.jpg/revision/latest?cb=20201121212136",
+        "title": "Que profissão Ellie gostaria de seguir caso a pandemia não tivesse ocorrido?",
+        "description": "Essa parte do jogo é bem legal",
+        "answer": 2,
+        "alternatives": [
+          "Cantora",
+          "Médica",
+          "Astronauta",
+          "Atriz"
+        ]
+      }
+    ],
+    "external": [
+      "https://aluraquiz-css.omariosouto.vercel.app",
+      "https://aluraquiz-marvel.omariosouto.vercel.app"
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#242420",
+        "mainBg": "#424240",
+        "contrastText": "#FFFFFF",
+        "disable": "#80807d",
+        "wrong": "#d62b2b",
+        "success": "#40f545"
+      },
+      "borderRadius": "4px"
+    }
+  }
