@@ -1,4 +1,8 @@
 import React, { FormEvent, useState } from 'react'
+import { useRouter } from 'next/router'
+
+import ptBR from '../../locales/pt-BR'
+import enUS from '../../locales/en-US'
 
 import Button from '../button'
 import Widget from '../widget'
@@ -24,6 +28,9 @@ interface QuestionWidgetProps {
 }
 
 const QuestionWidget: React.FC<QuestionWidgetProps> = (props) => {
+  const { locale } = useRouter()
+  const t = locale === 'en-US' ? enUS : ptBR
+
   const {
     questionPage, questions, qtdQuestions, onSubmit, addResult,
   } = props
@@ -39,7 +46,7 @@ const QuestionWidget: React.FC<QuestionWidgetProps> = (props) => {
     <Widget>
       <Widget.Header>
         <BackLinkArrow href="/" />
-        <h3>Pergunta {questionPage + 1} de {qtdQuestions}</h3>
+        <h3>{t.question} {questionPage + 1} {t.of} {qtdQuestions}</h3>
       </Widget.Header>
 
       <img
@@ -96,7 +103,7 @@ const QuestionWidget: React.FC<QuestionWidgetProps> = (props) => {
           </div>
           {/* @ts-ignore */}
           <Button type="submit" disabled={hasAlternativeSelected}>
-            Confirmar
+            {t.confirm}
           </Button>
           {isQuestionSubmited && isCorrect && <QuestionResult isCorrect={isCorrect} />}
           {isQuestionSubmited && !isCorrect && <QuestionResult isCorrect={isCorrect} />}

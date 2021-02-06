@@ -1,6 +1,11 @@
 import React from 'react'
+import { useRouter } from 'next/router'
+
 import styled from 'styled-components'
 import { MdDone, MdClose } from 'react-icons/md'
+
+import ptBR from '../../locales/pt-BR'
+import enUS from '../../locales/en-US'
 
 const ResultContainer = styled.div`
     width: 100%;
@@ -21,11 +26,15 @@ const ResultContainer = styled.div`
     flex-direction: column;
 `
 
-const questionResult: React.FC<{ isCorrect: boolean }> = ({ isCorrect }) => (
-  <ResultContainer>
-    {isCorrect ? <MdDone color="#19e924" size="20%" /> : <MdClose color="#e91919" size="20%" />}
-    <p style={{ fontSize: '2rem', letterSpacing: '2%' }}>{isCorrect ? 'Você acertou ;)' : 'Você errou :('}</p>
-  </ResultContainer>
-)
+const questionResult: React.FC<{ isCorrect: boolean }> = ({ isCorrect }) => {
+  const { locale } = useRouter()
+  const t = locale === 'en-US' ? enUS : ptBR
+  return (
+    <ResultContainer>
+      {isCorrect ? <MdDone color="#19e924" size="20%" /> : <MdClose color="#e91919" size="20%" />}
+      <p style={{ fontSize: '2rem', letterSpacing: '2%' }}>{isCorrect ? t.rightAnswer : t.wrongAnswer}</p>
+    </ResultContainer>
+  )
+}
 
 export default questionResult
