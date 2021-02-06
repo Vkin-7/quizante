@@ -54,13 +54,15 @@ const QuizPage: React.FC<QuizPageProps> = ({ externalQuestions, externalBg, name
         {screenState === 'LOADING' && <LoadingWidget />}
 
         {screenState === 'QUIZ' && (
-        <QuestionWidget
-          questions={questions}
-          questionPage={questionPage}
-          qtdQuestions={questions.length}
-          onSubmit={handleSubmit}
-          addResult={addResult}
-        />
+          <>
+            <QuestionWidget
+              questions={questions}
+              questionPage={questionPage}
+              qtdQuestions={questions.length}
+              onSubmit={handleSubmit}
+              addResult={addResult}
+            />
+          </>
         )}
 
         {screenState === 'RESULT' && <ResultWidget results={results} name={name} />}

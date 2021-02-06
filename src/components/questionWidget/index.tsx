@@ -86,6 +86,7 @@ const QuestionWidget: React.FC<QuestionWidgetProps> = (props) => {
                     id={alternativeId}
                     type="radio"
                     name={questionId}
+                    checked={selectedAlternative === index}
                     style={{ display: 'none' }}
                   />
                   {alternative}

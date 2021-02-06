@@ -4,13 +4,14 @@ import { MdDone, MdClose } from 'react-icons/md'
 
 const ResultContainer = styled.div`
     width: 100%;
-    height: 100%;
+    height: 100vh;
     
     z-index: 1000;
 
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
 
     background-color: rgba(0, 0, 0, .8);
 
